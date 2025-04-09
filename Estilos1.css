@@ -1,0 +1,37 @@
+h2 { /* este estilo afecta a todos los  de index2.html */
+
+    font-size: 60px;
+    color: rgb(24, 24, 219);
+    background-color: aqua;
+}
+.textomorado { /* clase css que aplica color morado y fuente lucida sans */
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.claseContenediv1 { /* Afectara a algunos contenedores div */
+    font-size: 40px;
+    width: 800px;
+    height: 600px;
+    background-color: darkgreen;
+
+
+}
+
+#fondonranja { /* Afectara a una etiqueta */
+    background-color: gold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.textomorado:hover{
+    background-color: rgb(47, 16, 226);
+    color: coral;
+
+
+}
+.claseContenediv1::first-letter{ /* Afectara solo a la primera letra del bloque */
+
+    font-size: 50px;
+    color: chartreuse;
+}
