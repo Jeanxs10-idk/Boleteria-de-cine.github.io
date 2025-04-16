@@ -11,7 +11,16 @@
 <body style="background-color: rgb(241, 248, 248);">
             <!-- style es para estetica de cada etiqueta en este caso el color del fondo-->
 
-            PAGINA CON CSS
+            <A id="POSICIONINICIAL"></A>
+
+            <h1>MENU PRINCIPAL DE INKAFARMA</h1>
+            <nav class="claseNav">
+                <a class="claseNav" href="https://www.digemid.minsa.gob.pe/webDigemid/">INICIO</a>
+                <a class="claseNav" href="#SOBREDIGEMID">SOBRE DIGEMID</a>
+                <a class="claseNav" href="https://opm-digemid.minsa.gob.pe/#/consulta-producto">PRODUCTOS</a>
+                <a class="claseNav" href="https://www.digemid.minsa.gob.pe/webDigemid/preguntas-frecuentes/">CONTACTO</a>
+        
+            </nav>
 
 
 <br>
@@ -118,7 +127,7 @@
 
         <h2> Uso de contenedores </h2>
 
-        <div class="claseContenediv1">
+        <div class="claseContenedordiv1">
             <p> TEXTO PARRAFO PERTENECIENTE A UNA CLASE DEL CONTENEDOR DIV </p>
             <h3>TEXTO H3 PERTENECIENTE A UNA CLASE DEL CONTENEDOR DIV</h3>
             <h3>opciones</h3>
@@ -132,11 +141,199 @@
 
         <h2> Uso de identificadores </h2>
         
-        <p id="fondonranja">Este texto ta diseñado con un identificado</p>
+        <p id="fondonaranja">Este texto ta diseñado con un identificado</p>
+
+        <h2  >POSICIONAMIENTO ABSOLUTE </h2>
+
+
+<!-- USO DE POSICIONAMIENTO -->
+<h2  >POSICIONAMIENTO STATIC 1 (con margin-top)</h2>
+
+<div style="display: inline-block" >
+  <P class="clase_Static"> teXTO CON  STATIC  </P>
+</div>
+
+<div style="display: inline-block" >
+  <P style="background-color: orange;"  > 2do teXTO en misma linea  </P>
+</div>
+<br><br>
+<h2  >POSICIONAMIENTO STATIC 2(SIN margin-top)</h2>
+
+<div style="display: inline-block" >
+  <P class="clase_Static2"> teXTO CON  STATIC  </P>
+</div>
+
+<div style="display: inline-block" >
+  <P style="background-color: orange;"> 2do teXTO en misma linea  </P>
+</div>
+
+<h2  >POSICIONAMIENTO RELATIVE</h2>
+
+<div style="display: inline-block" >
+  <P class="clase_Relative"> teXTO CON  POSICIONAMIENTO RELATIVE 
+    en un bloque inline -----------------------------------</P>
+  <img class="clase_Relative"
+     style="border:9px dotted ; color:rgb(253, 55, 29)"
+      src="C:\Users\73714064\Documents\GitHub\Boleteria-de-cine.github.io\imagenes\goat.jpg"
+             alt="IMAGEN NO DISPONIBLE"
+      width="400"       height="341"      >
+  </div>
+
+<div style="display: inline-block" >
+  <P  style="color: rgb(49, 182, 100); font-size: 30px;">
+     2do teXTO en misma linea  </P>
+</DIV>
+
+<p style="font-size:40px ;"> Ejemplo de posicionamiento RELATIVO
+  La Fuerza Aérea del Perú (FAP) es una institución, con calidad de órgano ejecutor, dependiente del Ministerio de Defensa. Es unidad ejecutora del Ministerio de Defensa.
+
+La FAP controla, vigila y defiende el espacio aéreo del país,
+que cubre su territorio y el mar adyacente hasta el límite de
+las doscientas millas, de conformidad con la ley y
+ con los tratados ratificados por el Estado, 
+ con el propósito de contribuir a garantizar la independencia, 
+ soberanía e integridad territorial de la República.
+
+  
+</p> 
+
+
+
+<h2  >POSICIONAMIENTO RELATIVE2 (con margin-top y left)</h2>
+
+<div style="display: inline-block" >
+  <P class="clase_Relative2"> teXTO CON  POSICIONAMIENTO RELATIVE 
+    en un bloque inline -----------------------------------</P>
+  <img class="clase_Relative2"
+     style="border:9px dotted ; color:rgb(253, 55, 29)"
+      src="C:\Users\73714064\Documents\GitHub\Boleteria-de-cine.github.io\imagenes\goat2.jpg"
+             alt="IMAGEN NO DISPONIBLE"
+      width="400"       height="341"      >
+  </div>
+
+<div style="display: inline-block" >
+  <P  style="color: rgb(49, 182, 100); font-size: 30px;">
+     2do teXTO en misma linea  </P>
+</DIV>
+
+
+<h2  >POSICIONAMIENTO ABSOLUTE </h2>
+
+<div style="display: inline-block" >
+  <P class="clase_absolute"> teXTO CON  POSICIONAMIENTO ABSOLUTO 
+    </P>
+  <img class="clase_absolute"
+     style="border:9px dotted ; color:rgb(253, 55, 29)"
+      src="C:\Users\73714064\Documents\GitHub\Boleteria-de-cine.github.io\imagenes\lioonel.jpg"
+             alt="IMAGEN NO DISPONIBLE"
+      width="400"       height="341"      >
+  </div>
+
+
+
+  <h2  >POSICIONAMIENTO ABSOLUTE RESPECTO A RELATIVE </h2>
+
+  <div style="display: inline-block"  class="clase_Relative3"    >
+    <P > IMAGEN ES ABSOLUTE RESPECTO AL DIV RELATIVE 
+      </P>
+    <img class="clase_AbsoluteRelative"
+       style="border:9px dotted ; color:rgb(253, 55, 29)"
+        src="C:\Users\73714064\Documents\GitHub\Boleteria-de-cine.github.io\imagenes\lioonel.jpg"
+               alt="IMAGEN NO DISPONIBLE"
+        width="400"       height="341"      >
+    </div>
+
+
+
+    <h2  >POSICIONAMIENTO FIXED </h2>
+
+   <div   >
+    
+    <img class="clase_Fixed ; marca_agua   "
+       style="border:9px dotted ; color:rgb(253, 55, 29)"
+        src="C:\Users\73714064\Documents\GitHub\Boleteria-de-cine.github.io\imagenes\messi dios.jpg"
+               alt="IMAGEN NO DISPONIBLE"
+        width="400"       height="341"      >
+   </div>
+
+<h4>importante calibrar el height del sticky con el tamaño del texto, porque las
+    siguientes etiquetas se escribiran despues de las dimensiones del height
+</h4>
+   <h2  >POSICIONAMIENTO STICKY </h2>
+
+   <div style="height: 2200px;"  >
+    
+    <img class="clase_Sticky "
+       style="border:9px dotted ; color:rgb(253, 55, 29)"
+        src="C:\Users\73714064\Documents\GitHub\Boleteria-de-cine.github.io\imagenes\escudo del mas grande.jpeg" 
+               alt="IMAGEN NO DISPONIBLE"
+        width="400"       height="341"      >
+  
+
+    <p style="font-size:40px ;">
+      El escudo del Perú es el símbolo nacional heráldico oficial del Perú, el cual es empleado por el Estado peruano y las demás instituciones públicas del país.
+      A lo largo de su historia, tuvo dos escudos nacionales; el primero adoptado el 21 de octubre de 1821; el segundo fue adoptado el 25 de febrero de 1825, y modificado el 31 de marzo de 1950.
+      Entre los años 1836 y 1839, el Perú estuvo dividido en dos estados: el Estado Nor-Peruano y el Estado Sud-Peruano, los cuales junto con el Estado Boliviano conformaron la Confederación Perú-Boliviana; los escudos de los tres estados constituyeron el Escudo de Armas de la Confederación.
+      El escudo del Perú es el símbolo nacional heráldico oficial del Perú, el cual es empleado por el Estado peruano y las demás instituciones públicas del país.
+      A lo largo de su historia, tuvo dos escudos nacionales; el primero adoptado el 21 de octubre de 1821; el segundo fue adoptado el 25 de febrero de 1825, y modificado el 31 de marzo de 1950.
+      Entre los años 1836 y 1839, el Perú estuvo dividido en dos estados: el Estado Nor-Peruano y el Estado Sud-Peruano, los cuales junto con el Estado Boliviano 
+      El escudo del Perú es el símbolo nacional heráldico oficial del Perú, el cual es empleado por el Estado peruano y las demás instituciones públicas del país.
+      A lo largo de su historia, tuvo dos escudos nacionales; el primero adoptado el 21 de octubre de 1821; el segundo fue adoptado el 25 de febrero de 1825, y modificado el 31 de marzo de 1950.
+      Entre los años 1836 y 1839, el Perú estuvo dividido en dos estados: el Estado Nor-Peruano y el Estado Sud-Peruano, los cuales junto con el Estado Boliviano 
+      El escudo del Perú es el símbolo nacional heráldico oficial del Perú, el cual es empleado por el Estado peruano y las demás instituciones públicas del país.
+      A lo largo de su historia, tuvo dos escudos nacionales; el primero adoptado el 21 de octubre de 1821; el segundo fue adoptado el 25 de febrero de 1825, y modificado el 31 de marzo de 1950.
+      Entre los años 1836 y 1839, el Perú estuvo dividido en dos estados: el Estado Nor-Peruano y el Estado Sud-Peruano, los cuales junto con el Estado Boliviano 
+      El escudo del Perú es el símbolo nacional heráldico oficial del Perú, el cual es empleado por el Estado peruano y las demás instituciones públicas del país.
+      A lo largo de su historia, tuvo dos escudos nacionales; el primero adoptado el 21 de octubre de 1821; el segundo fue adoptado el 25 de febrero de 1825, y modificado el 31 de marzo de 1950.
+      Entre los años 1836 y 1839, el Perú estuvo dividido en dos estados: el Estado Nor-Peruano y el Estado Sud-Peruano, los cuales junto con el Estado Boliviano 
+      
+    </p>
+    <div>
+
+<div class="bloque">Elemento 1 de bloque  </div>
+<div class="tiponone">Elemento 2 de estilo none  </div>
+<div class="tipohidden">Elemento 3 de estilo hidden  </div>
+
+<div class="enlinea">Elemento 1 de inline  </div>
+<div class="enlinea">Elemento 2 de inline  </div>
+<div class="tipodeinlineblock">Elemento 3 de inline-bock  </div>
+
+<h3>Elemento desaparecido mediante display none</h3>
+<div class="tiponone">Elemento de estilo none</div>
+
+<div class="enlinea">Elemento 1 de inline  </div>
+<div class="enlinea">Elemento 2 de inline  </div>
+<div class="tipodeinlineblock">Elemento 3 de inline-bock  </div>
+
+<h3>Elemento oculto mediante visibility hidden</h3>
+<div class="tipohidden">Elemento 3 de estilo hidden  </div>
+
+<h2> Uso de visulizacion display flex</h2>
+
+<div class="tipoflex">
+    <div style="background-color: crimson;"> Elemento 1 de flex</div>
+    <div style="background-color: rgb(18, 141, 163);"> Elemento 2 de flex</div>
+    <img src="C:\Users\73714064\Documents\GitHub\Boleteria-de-cine.github.io\imagenes\escudo del mas grande.jpeg"
+     alt="IMAGEN NO DISPONIBLE" width="200px" height="200px">
+     <div style="background-color: bisque;"> Elemento 3 flex</div>
+</div>
+
+<h2> Uso de menus con contenedor nav</h2>
 
 
 
 
+
+<a name="SOBREDIGEMID" ></a> <!-- se puede clocar name o id para ancla n la misma pagina-->
+<P >La DIGEMID es una institución técnico normativa que tiene como objetivo fundamental, lograr que la población tenga acceso a medicamentos seguros, eficaces y de calidad y que estos sean usados racionalmente,
+     por lo cual ha establecido como política:
+
+    Desarrollar sus actividades buscando un mejor servicio a los clientes externos y partes interesadas.
+    Aplicar la mejora continua en cada uno de sus procesos.
+    Establecer y mantener un Sistema de Gestión de la Calidad basado en el cumplimiento de la norma ISO 9001:2015 y la legislación vigente.
+    Proporcionar a los trabajadores capacitación y recursos necesarios para lograr los objetivos trazados.</P>
+
+<a href="#POSICIONINICIAL">VOLVER AL INCICIO</a>
 
 
 

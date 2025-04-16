@@ -9,7 +9,7 @@ h2 { /* este estilo afecta a todos los  de index2.html */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.claseContenediv1 { /* Afectara a algunos contenedores div */
+.claseContenedorDiv1 { /* Afectara a algunos contenedores div */
     font-size: 40px;
     width: 800px;
     height: 600px;
@@ -18,7 +18,7 @@ h2 { /* este estilo afecta a todos los  de index2.html */
 
 }
 
-#fondonranja { /* Afectara a una etiqueta */
+#fondonaranja { /* Afectara a una etiqueta */
     background-color: gold;
     font-size: 30px;
     text-align: center;
@@ -30,8 +30,174 @@ h2 { /* este estilo afecta a todos los  de index2.html */
 
 
 }
-.claseContenediv1::first-letter{ /* Afectara solo a la primera letra del bloque */
+.claseContenedordiv1::first-letter{ /* Afectara solo a la primera letra del bloque */
 
     font-size: 50px;
     color: chartreuse;
 }
+.clase_Static {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    margin-top: 0px;
+   margin-left:20px ;
+   margin-right:80px; 
+}
+
+.clase_Static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    top: 20px;  /* esto no funciona en static */
+    left:80px ;  /* esto no funciona en static */
+    right:200px;  /* esto no funciona en static */
+    
+}
+
+.clase_Relative{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative:hover {
+    position:relative; 
+    top: 100px;
+    left: 100px;
+    z-index: -5;
+    /* z-index para colocar adelante o atras en profundidad respecto a otro elemento  */
+}
+
+.clase_Relative2{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative2:hover {
+    position:relative; 
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+
+.clase_absolute {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 500px;   /* de arriba  hacia abajo, osea baja */
+    left: 100px;
+    z-index: -10;
+
+}
+
+.clase_Relative3 {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 250px;
+    width: 200px;
+    position: relative;
+
+}
+
+.clase_AbsoluteRelative {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 300px;  /* de abajo hacia arriba, osea sube */
+    left: 600px;
+    z-index: -5;
+
+}
+
+
+.clase_Fixed {
+    height: 320px;
+    width: 300px;
+    position: fixed;
+    left: 600px;
+    bottom: 300px;
+    z-index: -10;
+
+}
+
+.marca_agua {
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 10;
+
+}
+
+.clase_Sticky {
+    position:sticky;
+    font-size: 40px;
+    top: 0px;
+    left:40px;
+    height: 300px;
+
+}
+
+.tipoinlineblock { /*estilo disply inline*/
+    background-color: brown;
+    font-size: 30px;
+    margin: 10px;
+    color: blue;
+    display:inline-block;
+    width: 500px;
+
+}
+
+.enlinea {/*estilo display inline*/
+background-color: chocolate;
+display: inline;
+font-size: 30px;
+margin: 2px;
+color: beige;
+width: 80px;
+height:40px ;
+}
+.bloque{/*estillo display por defecto*/
+    background-color:blue;
+  font-size: 20px;
+  margin: 20px;
+  color: aquamarine;
+  }
+  .tiponone{/*estillo display por none*/
+    background-color:blue;
+  font-size: 20px;
+  margin: 20px;
+  color: aquamarine;
+  display: none;
+  }
+  .tipohidden{/*estillo display hidden*/
+    background-color:blue;
+  font-size: 20px;
+  margin: 20px;
+  color: aquamarine;
+  display: hidden;
+  }
+  .tipoflex{
+    display: flex;
+    background-color:rgb(156, 156, 248);
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .claseNav  {
+    background-color: coral;
+    font-size: 30px;
+    padding-inline: 0px;
+    color: black;
+    display: inline;
+    list-style-type: none;
+  }
+
+  .claseNav a:hover{
+    background-color: rgb(63, 170, 241);
+  }
