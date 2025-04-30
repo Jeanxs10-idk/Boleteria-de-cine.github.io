@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos1.css">
-
+    <script type="text/javascript" src="SCRIPT1.js" ></script>
 
     <title>CLASE - PAGINA CON CSS</title>
 </head>
@@ -487,6 +487,70 @@ las doscientas millas, de conformidad con la ley y
 
 
  <button type="submit" style="font-size:30px ;" > enviar </button>
+
+</form>
+
+<div style="font-size: 30px;">Contenedor Resultado en javascript
+  <div id="resultado" style="font-size: 30px;" >
+  <p> OPERACION SUMA</p>
+  <DIV>    
+  </DIV>
+<script>
+  window.alert("Bienvenido"); // comando de windows
+  /*javascript acepta cualquier tipo de comentario */
+var val1 = 10;
+var val2 = 60;
+var suma = val1 + val2;
+var resta = val1 - val2;
+var multi = val1 * val2;
+var div = val1 / val2;
+
+document.write("<br> <br> <br> FIN DE PAGINA"); //lo realiza al ultimo del script
+
+
+console.log("El valor de la suma de ", val1," con ",val2," es :",suma);
+console.log("El valor de la resta de ", val1," con ",val2," es :",resta);
+console.log("El valor de la multiplicacion de ", val1," con ",val2," es :",multi);
+console.log("El valor de la division de ", val1," con ",val2," es :",div);
+document.getElementById("resultado").innerHTML=
+"<br> El valor de la suma de "+val1+" con "+val2+" es :"+suma+ "<br>"
++ "El valor de la resta de "+val1+" con "+val2+" es :"+resta;
+
+
+
+
+
+
+
+
+</script>
+
+
+  <section>
+    <h1 style="font-size: 40px;">MANIPUILACION DEL DOM</h1>
+    <P id="ejmDOM1" style="font-size: 25.5px;">
+      Este es un Texto inicial a aplicar DOM
+    </P>
+
+
+    <button style="font-size: 25.5px;"
+    onclick="FCambioColor()"> CAMBIO COLOR</button>
+  </section>
+
+
+
+<!--MANIPULACION DEL DOM-->
+ <section>
+<h1 style=" font-size:50px ;">EJEMPLO DE MANIPULACION DEL DOM </h1>
+ <p id="ejmDOM1" style=" font-size:25px ;"> Este es primer texto a aplicar DOM </p>
+<p class="ClassDOM1" style=" font-size:25px ;"> Texto l a aplicar DOM mediante clase </p>
+<p class="ClassDOM1" style=" font-size:25px;"> Texto 2 a aplicar DOM mediante clase </p>
+<h2 class="ClassDOM1" style=" font-size:25px ;"> Texto 3 a aplicar DOM mediante TAG h2</h2>
+<button onclick="FCambioColor()"> CAMBIAR COLOR por ID </button>
+<button onclick="FCambioClase1()"> CAMBIAR Por CLASE </button>
+<button onclick="FCambioTag1()"> CAMBIAR Por Tag h2 </button>
+</section>
+
 
     </body>
 </html>
