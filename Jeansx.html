@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos1.css">
+    <script type="text/javascript" src="SCRIPT1.js" ></script>
 
 
     <title>CLASE - PAGINA CON CSS</title>
@@ -462,5 +463,68 @@ las doscientas millas, de conformidad con la ley y
 
  <button type="submit" style="font-size:30px ;" > enviar </button>
 
-    </body>
+</form>
+
+
+
+
+<h2>FORMULARIO DE REGISTRO</h2>
+
+<form action="TODOSOBREMI.html" method="post">
+
+    <p>
+        <label for="nombre">Nombre:
+            <input type="text" name="nombre" id="nombre" class="datosPersonales" required>
+        </label>
+    </p>
+
+    <p>
+        <label for="observacion">Observación:
+            <textarea name="observacion" id="observacion" style="height:180px; width:300px; font-size: 25px;"></textarea>
+        </label>
+    </p>
+
+    <p><label>Ciclo actual</label><br>
+        <input type="radio" name="ciclo" id="Primero" value="Primero"><label for="Primero">Primero</label><br>
+        <input type="radio" name="ciclo" id="Segundo" value="Segundo"><label for="Segundo">Segundo</label><br>
+        <input type="radio" name="ciclo" id="Tercero" value="Tercero"><label for="Tercero">Tercero</label><br>
+        <input type="radio" name="ciclo" id="Cuarto" value="Cuarto"><label for="Cuarto">Cuarto</label><br>
+        <input type="radio" name="ciclo" id="Quinto" value="Quinto"><label for="Quinto">Quinto</label><br>
+        <input type="radio" name="ciclo" id="Sexto" value="Sexto"><label for="Sexto">Sexto</label>
+    </p>
+
+    <button type="button" onclick="FCapturarNombre()">Copiar Nombre a Observaciones</button><br><br>
+    <button type="button" onclick="FValidarCiclo()">Enviar Ciclo a Observación</button><br><br>
+    <button type="button" onclick="FCrearDatosCiclo()">Enviar Ciclo a Observación Automático</button><br><br>
+    <button type="submit">Enviar</button>
+</form>
+
+
+
+<section>
+  <h2> Actividad para el estudiante</h2>
+
+  <button style="font-size:25px ;" onclick="FVerificacion()">
+    verificacion de nombres</button>
+</section>
+
+<h2>Formulario para concatenar nombres</h2>
+
+<form id="formulario">
+    <p>
+        <label for="nombre1">Primer nombre:
+            <input type="text" id="nombre1" name="nombre1" required>
+        </label>
+    </p>
+    
+    <p>
+        <label for="nombre2">Segundo nombre:
+            <input type="text" id="nombre2" name="nombre2" required>
+        </label>
+    </p>
+
+    <button type="button" onclick="concatenarNombres()">Concatenar Nombres</button>
+  </form>
+
+</body>
 </html>
